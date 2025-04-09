@@ -1,0 +1,221 @@
+/* .box1{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px solid rgb(0, 0, 255);
+}
+.box2{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px double rgb(0, 255, 0);
+}
+.box3{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px dashed rgb(255, 0, 0);
+}
+.box4{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px groove rgb(255, 255, 0);
+}   
+.box5{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px ridge rgb(255, 0, 255);
+}
+.box6{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px outset rgb(0, 255, 255);
+}
+.box7{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px inset rgb(200, 100, 20);
+}
+.box8{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border-top: 20px solid aquamarine;
+    border-right: 20px ridge salmon;
+    border-bottom: 20px dashed chartreuse;
+    border-left: 20px double rgb(0, 0, 255);
+} */
+/* .box9{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border-radius: 40px;
+    border: 20px solid rgb(0, 0, 255);
+}
+.box10{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border-radius: 50%;
+    border: 20px double rgb(0, 255, 0);
+}
+.box11{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border-radius: 25%;
+    border: 20px ridge rgb(255, 0, 0);
+}
+.box12{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border-radius: 50%;
+    border: 20px groove rgb(255, 255, 0);
+} */
+/* .box13{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 20px ridge rgb(0, 247, 255);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: linear-gradient(185deg, rgb(62, 249, 255) , rgb(214, 250, 252));
+}
+.box14{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border:  transparent;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: linear-gradient(185deg, rgb(62, 249, 255) , rgb(214, 250, 252));
+} */
+/* .box15{
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 10px solid brown;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    overflow: hidden;
+    resize: both;
+    margin: 20px auto;
+}
+.box16{
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 10px solid brown;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    overflow: hidden;
+    resize: both;
+    outline: 10px solid green;
+    outline-offset: 10px;
+}
+.box17{
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border: 10px solid brown;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    overflow: hidden;
+    resize: both;
+    outline: 10px solid green;
+    outline-offset: 0px;
+}
+.box18{
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 22px auto;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    overflow: hidden;
+    resize: both;
+    outline: 10px solid green;
+    outline-offset: 0px;
+} */
+
+
+.box{
+    width: 400px;
+    margin: 30px;
+    border: 10px ridge blueviolet;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-image: url('https://static.vecteezy.com/system/resources/thumbnails/020/933/072/small_2x/abstract-blur-gradient-background-vector.jpg') 3;
+    box-shadow: 0px 0px 50px blueviolet;
+    background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?semt=ais_hybrid');
+}
+.box h1{
+    color: blueviolet;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 2px;
+}
+.box input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-bottom: 5px solid rgb(206, 149, 5);
+    font-size: 20px;
+    font-weight: bolder;
+    color: blueviolet;
+    border-image: url('https://static.vecteezy.com/system/resources/thumbnails/020/933/072/small_2x/abstract-blur-gradient-background-vector.jpg') 10;
+    background: transparent;
+}
+.box input:focus{
+    border: none;
+    border-bottom: 5px solid rgb(87, 1, 168);
+    transition: all 0.3s ease-in-out;
+}
+.box input::placeholder{
+    color: rgba(132, 0, 255, 0.3);
+    font-size: 20px;
+}
+.box button{
+    background: transparent;
+    color: blueviolet;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 5px;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+.box button:hover{
+    background: blueviolet;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px blueviolet;
+}
+.box button:active{
+    background: violet;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px blueviolet;
+    transform: translateY(5px);
+}

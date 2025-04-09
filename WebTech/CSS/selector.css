@@ -1,0 +1,235 @@
+/* id - #
+class .
+tag -tag name
+gropu ,
+univarsal *
+ */
+
+
+
+/* 
+#p{
+    color: red;
+}
+#s{
+    color: yellow;
+
+}
+
+#c{
+    color: red;
+}
+
+.frist{
+    color: red;
+    background-color: aqua;
+}
+
+.secound{
+    color: brown;
+    background-color: yellow;
+}
+
+h3,div,a{
+    background-color: aqua;
+    font-size: 30px;
+}
+
+.av,.av1,.av2{
+    background-color: aquamarine;
+}
+
+*{
+    font-family: cursive;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+section h1{
+    background-color: magenta;
+    color: black;
+}  
+
+/* Dont use tag name use (class and id) */
+
+/* .parent>.child1{
+    color: brown;
+} */
+
+/* p+p {
+    background-color:yellowgreen;
+}
+
+section~b{
+    background-color: aquamarine;
+} */
+
+
+/* p::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+h3::first-line{
+    color: red;
+}
+
+p::before{
+    content: "Welcome 🥳";
+}
+
+p::after{
+    content: "Good Bye 🥳";
+}
+
+p::selection{
+    color: white;
+    background-color: darkcyan;
+} */
+
+/* h3::selection{
+    color: darkgreen;
+    background-color: yellow;
+} */
+
+/* li{
+    font-size: xx-large;
+}
+li::marker{
+    color: red;
+    background-color: yellow;
+} */
+
+
+/* h1[class = "Py"]{
+    background-color: olivedrab;
+}
+a[target = "_self"]{
+    background-color: aquamarine;
+} */
+
+/* h1{
+    margin: 20px;
+}
+h1:hover{
+    background-color: aquamarine;
+    color:chocolate;
+    text-decoration: underline;
+}
+
+h1:active{
+    background-color: yellow;
+}
+
+img{
+    margin: 20px;
+    width: 200px;
+}
+
+img:hover{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+img:active{
+    transform: scale(0.5);
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: aquamarine;
+    color:chocolate;
+    text-decoration: underline;
+}
+
+a:active{
+    background-color: yellow;
+    color: black;
+    text-decoration:solid;
+}
+
+h2:active{
+    background-color: yellow;
+    color: blueviolet;
+    text-decoration:solid;
+}
+h2{
+    text-align: center;
+}
+h2:hover{
+    transform: scale(1.5);
+    transition: 1s;
+    text-decoration: underline;
+} */
+
+/* input:hover{
+    border: 1.5px solid red;
+    border-radius: 10px;
+}
+
+input:focus{
+    color: black;
+    background-color: salmon;
+} */
+
+/* div{
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    color: black;
+    font-size: 30px;
+}
+
+div p:first-child{
+    background-color: lightcoral;
+}
+div p:last-child{
+    background-color: yellow;
+}
+div p:nth-child(3){
+    background-color: red;
+}
+
+section{
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    padding: 20px;
+    font-size: 30px;
+}
+section p:nth-of-type(2n){
+    background-color: yellowgreen;
+}
+
+section p:nth-of-type(2n-1){
+    background-color: wheat;
+}
+
+p{
+    font-size: 20px;
+    padding: 5px;
+} */
+section{
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    padding: 20px;
+    font-size: 30px;
+}
+
+section p:first-of-type{
+    background-color: lightcoral;
+}
+section p:last-child{
+    background-color: yellow;
+}
+
+section i:nth-of-type(2){
+    background-color: aquamarine;
+}
+section i:first-child{
+    background-color: lightcoral;
+}
+section i:last-child{
+    background-color: yellow;
+}

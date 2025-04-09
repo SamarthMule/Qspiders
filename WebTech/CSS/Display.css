@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #592c1c;
+    margin: 0;
+    padding: 20px;
+}
+
+/* h1 {
+    color: #ac6161;
+    display: inline;
+    margin: 10px;
+    height: 50px;
+    background-color: #5a3030;
+    border-radius: 5px;
+    padding: 2px;
+} */
+
+/* h1 {
+    color: #ac6161;
+    display: inline-block;
+    margin: 10px;
+    height: 50px;
+    background-color: #5a3030;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+span {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #806666;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+} */
+
+/* input {
+    margin: 5px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #806666;
+    font-size: 16px;
+    font-weight: bold;
+} */
+/* 
+input {
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #806666;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+} */
+
+
+/* section{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #36312c;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+ display: inline; 
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #d1a6a6;
+} */
+/* 
+main{
+    background-color: #ec7070;
+    height: 100%;
+    padding: 20px;
+}
+#Box1{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #36312c;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #d1a6a6;
+}
+#Box2{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #36312c;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #d1a6a6;
+}
+#Box3{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #36312c;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    display: inline;
+    border-radius: 15px;
+    background-color: #d1a6a6;
+}   
+#Box4{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #36312c;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    display: block;
+    border-radius: 15px;
+    background-color: #d1a6a6;
+} */
+
+/* .parent {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px ridge #36312c;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-color: #d1a6a6;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    flex-direction: row;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 20px;
+    flex-shrink: 1;
+} */
+.parent > .clild{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    /* width: 100%; */
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:bisque;
+    border: 2px ridge #000000;
+    background-color: #394371;
+}
+.parent > .clild:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.parent > .clild:nth-child(3){
+    flex-grow: 1;
+}
+
+.parent > .kid{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:bisque;
+    border: 2px ridge #000000;
+    background-color: #707139;
+    /* flex-grow: 1; */
+}
+.parent > .kid:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.parent > .kid:last-child{
+    flex-basis: 300px;
+    /* flex-grow: 1; */
+}
+
+.parent2{
+    he
+}

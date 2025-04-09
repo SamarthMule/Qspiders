@@ -1,0 +1,26 @@
+.home-page{
+    height: 95vh;
+    width: 100%;
+    background-color: aqua;
+    background-image: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* background-blend-mode: luminosity; */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    filter: brightness(80%);
+    filter: contrast(200%);
+    -webkit-filter: brightness(80%);
+    /* filter: grayscale(100%); */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.home-page h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-shadow: 10px 3px 4px orange;
+}

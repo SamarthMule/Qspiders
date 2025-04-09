@@ -1,0 +1,19 @@
+body{
+    background-color: cadetblue ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+h1{
+        text-align: center;
+        color: bisque;
+        border: 3px solid red;
+        height: 70px;
+        width: 300px;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}

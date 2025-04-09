@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 100vw;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.parent .cards {
+    width: 200px;
+    background-color:lightcyan;
+    border: 2px ridge lightcyan;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.parent .cards:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: white;
+}
+.parent .cards img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

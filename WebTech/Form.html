@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form hidden action="" style="width: 50%; margin: auto auto; padding: 20px; border: 3px solid #000; border-radius: 15px; box-shadow: 0px 0px 10px 1px #000;">
+        <label for="sname">Student Name   : </label>
+        <input type="text" name="sname" id="sname" ><br><br>
+
+        <label for="email">Student Email  : </label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="content">Student Contant: </label>
+        <input type="tel" name="content" id="content"><br><br>
+
+        <label for="age">Student Age     : </label>
+        <input type="number" name="age" id="age"><br><br>
+
+        <label for="dob">Student DOB     : </label>
+        <input type="date" name="dob" id="dob"> <br><br>
+
+        <label for="gender">Student Gender  : </label>
+        <input type="radio" name="gender" id="gender" value="female"> Female
+        <input type="radio" name="gender" id="gender" value="male"> Male
+        <input type="radio" name="gender" id="gender" value="other"> Other<br><br>
+
+        <label for="skill">Skills : </label>
+        <input type="checkbox" name="skill" id="skill" value="sql"> SQL
+        <input type="checkbox" name="skill" id="skill" value="java"> Java
+        <input type="checkbox" name="skill" id="skill" value="python"> Python
+        <input type="checkbox" name="skill" id="skill" value="webtech"> WebTech<br><br>
+
+        <label for="address">Student Address  : </label>
+        <textarea name="address" id="address" rows="4" cols="30"></textarea><br><br>
+
+        <label for="degree">Educational Degree : </label>
+        <select name="degree" id="degree">
+            <option value="">Choose an degree</option>
+            <option value="be">B.E</option>
+            <option value="btech">B.Tech</option>
+            <option value="bcs">B.Cs</option>
+            <option value="bsc">B.Sc</option>
+            <option value="bca">BCA</option>
+            <option value="bcom">B.com</option>
+        </select>
+
+        <select name="degree" id="degree">
+            <option value="">Choose an degree</option>
+            <optgroup label="B.Teh">
+                <option value="B.tech-cse">CSE</option>
+                <option value="B.tech-it">IT</option>
+                <option value="B.tech-mech">Mech</option>
+                <option value="B.tech-civil">Civil</option>
+            </optgroup>
+            <optgroup label="B.Cs">
+                <option value="B.Cs-cse">CSE</option>
+                <option value="B.Cs-it">IT</option>
+                <option value="B.Cs-mech">Mech</option>
+                <option value="B.Cs-civil">Civil</option>
+            </optgroup>
+            <optgroup label="B.Sc">
+                <option value="B.Sc-cse">CSE</option>
+                <option value="B.Sc-it">IT</option>
+                <option value="B.Sc-mech">Mech</option>
+                <option value="B.Sc-civil">Civil</option>
+            </optgroup>
+            <optgroup label="BCA">
+                <option value="BCA-cse">CSE</option>
+                <option value="BCA-it">IT</option>
+                <option value="BCA-mech">Mech</option>
+                <option value="BCA-civil">Civil</option>
+            </optgroup>
+            <optgroup label="B.Com">
+                <option value="B.Com-cse">CSE</option>
+                <option value="B.Com-it">IT</option>
+                <option value="B.Com-mech">Mech</option>
+                <option value="B.Com-civil">Civil</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="resume">Student Resume : </label>
+        <input type="file" name="resume" id="resume"> <br><br>
+
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" > <br><br>
+
+
+        <!-- 
+        <input type="button" name="button" id="button"> button
+        <input type="datetime" name="" id="">
+        <input type="datetime-local" name="" id="">
+        <input type="month" name="" id="">
+        <input type="time" name="" id="">
+        <input type="week" name="" id=""><br><br> 
+        <input type="color" name="color" id="color"><br><br>  color picker 
+        <input type="hidden" name="hidden" id="hidden"><br><br>  hidden field 
+        <input type="image" src="" name="image" id="image"><br><br>  image submit
+        <input type="url" name="" id="">  url
+        <input type="range" name="" id="">  range
+        <input type="search" name="" id="">  search 
+        -->
+
+        <input type="reset" name="reset" id="reset"> <!-- reset button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <fieldset style="width: 50%; margin: auto auto; padding: 20px; border: 3px solid #000; border-radius: 15px; box-shadow: 0px 0px 10px 1px #000;">
+    <legend style="text-align: center; padding: 5px; background-color:wheat;"> Application Form</legend>
+    <form action="">
+        <h1>Validation Attributes</h1>
+        <input type="text" placeholder="Enter your name" required autofocus>
+        <input type="email" placeholder="Enter your email" readonly>
+        <input type="email" placeholder="Enter your email" disabled><br><br>
+        
+        <input type="tel" placeholder="Enter your contact" maxlength="10" minlength="10"><br><br>
+
+        <input type="date" max="2025-09-21" min="2025-04-19">
+        <input type="date" max="2025-04-21" min="2025-04-19"><br><br>
+
+        <input type="text" name="" id="" size="50">
+        <input type="text" pattern="[A-Za-z0-9@]{7}"><br><br>
+    
+        <button type="submit">Submit </button>
+    </form>
+</fieldset>
+
+    <details>
+        <summary>Summary About Html</summary>
+        <p>HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages. HTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML 4.01 version is widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this version was published in 2012.</p>
+        <img src="./images//Dhoni.jpg" alt="" style="width: 100%; height: 100%;">
+    </details>
+
+</body>
+</html>

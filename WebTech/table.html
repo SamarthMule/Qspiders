@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<style>
+    th{
+        color:coral;
+    }
+</style>
+<body>
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+        <tr>
+            <th colspan="2">EName + Job</th>
+            <!-- <th>Job</th> -->
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Collin sir</td>
+            <td rowspan="2">SQL Trainer</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Predeep sir</td>
+            <!-- <td>SQL Trainer</td> -->
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>Rohit sir</td>
+            <td>FrontEnd Trainer</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="1px" cellpadding="5px" cellspacing="0px" width="50%" style="justify-self: center; text-align: center; border-color:brown; background-color: antiquewhite; color:saddlebrown; border-radius: 5px" >
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <th colspan="2" rowspan="2">Project</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+        </tr>
+    </table>
+
+</body>
+</html>

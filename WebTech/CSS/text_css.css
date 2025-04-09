@@ -1,0 +1,129 @@
+.head{
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(55, 226, 40);
+    font-size: 30px
+}
+#content{
+    text-align: justify;
+    font-size: 20px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-indent: 100px;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(21, 255, 0);
+    text-emphasis-style: triangle;
+    text-decoration-thickness: 5px;
+    letter-spacing:5px;
+}
+#msg{
+    text-align: center;
+    font-size: 20px;
+    text-indent: 100px;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 600;
+    border: 6px solid rgb(0, 255, 149);
+    font-variant: small-caps;
+}
+
+.head1{
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+#content1{
+    font-family: "Lilita One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+    text-align: justify;
+}
+#msg1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 1px rgb(0, 255, 149);
+}
+
+.btn{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(0, 255, 149);
+    text-decoration-thickness: 5px;
+    letter-spacing: 5px;
+    color: rgb(0, 255, 149);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+.btn:hover{
+    background-color: rgb(0, 255, 149);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 1px rgb(0, 94, 55);
+}
+
+.btn:active{
+    background-color: rgb(1, 48, 28);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 1px rgb(117, 240, 189);
+}
+
+.box{
+    background-color: cyan;
+    width: 600px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 0px 50px 0px 50px;
+    border: 3px solid rgb(0, 255, 149);
+    box-shadow: 5px 5px 1px rgb(0, 255, 149);
+    margin: 20px;
+}
+
+.head2{
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(0, 255, 149);
+    text-decoration-thickness: 5px;
+    letter-spacing: 7px;
+}
+
+#msg2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px rgb(0, 255, 0);
+}
+
+#content2{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+}
