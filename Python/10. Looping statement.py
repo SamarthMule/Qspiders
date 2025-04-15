@@ -609,7 +609,7 @@
 
 # break:
 
-print("\nQ1. WAP to guess the enter mnumber ( Number game)")
+# print("\nQ1. WAP to guess the enter mnumber ( Number game)")
 # import random 
 # number = random.randint(0, 100)
 # print(number)
@@ -656,19 +656,82 @@ print("\nQ1. WAP to guess the enter mnumber ( Number game)")
 #     else:
 #         print("Incorrect pin. Please try again.")
         
-print("\nQ4. WAP to check whethervthe given int is prime or not and break the loop after storing the prime num in new list (atleast 5 prime numbers).")
-num = int(input("Enter the number: "))
-prime_numbers = []
-i = 2
-while True:
-    is_prime = True
-    for j in range(2, int(i**0.5) + 1):
-        if i % j == 0:
-            is_prime = False
-            break
-    if is_prime:
-        prime_numbers.append(i)
-    if len(prime_numbers) >= num:
-        break
-    i += 1
-print("Prime numbers are: ", prime_numbers)
+# print("\nQ4. WAP to check whethervthe given int is prime or not and break the loop after storing the prime num in new list (atleast 5 prime numbers).")
+# num = int(input("Enter the number: "))
+# prime_numbers = []
+# i = 2
+# while True:
+#     is_prime = True
+#     for j in range(2, int(i**0.5) + 1):
+#         if i % j == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         prime_numbers.append(i)
+#     if len(prime_numbers) >= num:
+#         break
+#     i += 1
+# print("Prime numbers are: ", prime_numbers)
+
+# continue
+
+# print("\nQ1. WAP to extract all the integers from the given list (Take User Input)")
+# l = eval(input("Enter the list: "))
+# print("Integers in list : ", end=" ")
+# for i in l:
+#     if type(i) != int: continue
+#     print(i , end=" ")
+
+# print("\nQ2. WAP to extract all the special char from the given string (Take User Input)")
+# s = input("Enter any String: ")
+# print("Special Characters in String : ",end=" ")
+# for i in s:
+#     if i not in '~!@#$%^&*()`{<>/}|' : continue
+#     print(i, end=" ")
+    
+# print("\nQ3. WAP to print 1 to n numbers using while loop by skipping all te odd numbers (Take User Input)")
+# n = int(input("Enter Any number: "))
+# i = 1
+# print(f"Odd Number in 1 to {n} : " , end=" ")
+# while i <= n:
+#     if i % 2 != 0:
+#         i += 1
+#         continue
+#     print(i, end=" ")
+#     i+=1
+    
+# print("\nQ4. WAP to solve the above question by using for loop")
+# n = int(input("Enter Any number: "))
+# print(f"Odd Number in 1 to {n} : " , end=" ")
+# for i in range(1, n + 1):
+#     if i % 2 != 0: continue
+#     print(i, end=" ")
+
+# print("\nQ5. WAP to print only non-vowels characters from a given string (Take User Input)")
+# s = input("Enter Any String : ")
+# print("Non-vowels Characters in String : ", end=" ")
+# for i in s:
+#     if i in 'aeiouAEIOU': continue
+#     print(i, end=" ")
+    
+# print("\nQ6. WAP to take user input of list and skip all the negative number and create new list")
+# l = eval(input("Enter Any List : "))
+# new_l = []
+# for i in l:
+#     if (type(i) == int or type(i) == float) and i < 0: 
+#         continue
+#     new_l.append(i)
+# print("New List Created : ",new_l)
+
+# print("\nQ7. WAP to skip all the words shorter than 4 characters (Take User Input)")
+# s = input("Enter any String : ")
+# s = s.split()
+# print("String with skipping words shorter than 4 characters: ", end=" ")
+# for i in s:
+#     if len(i) < 4: continue
+#     print(i, end=" ")
+
+# pass
+
+# for i in range(100):
+#     pass
