@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar{
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .first i{
+    color: red;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+.navbar .first span{
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+}
+.navbar .second span:first-child{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.navbar .second span:hover{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(221, 228, 228);
+    cursor: pointer;
+}
+.navbar .third div{
+    padding: 8px 15px 8px 15px;
+    border: 1px solid rgb(127, 126, 126);
+    color: gray;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    right: 20px;
+}
+.navbar .third div:hover{
+    box-shadow: 1px 2px 2px 1px gray;
+}
+
+
+.search-box{
+    height: 5rem;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box .parent{
+    height: 4rem;
+    width: 70%;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 1px 2px 5px 2px gray;
+    display: flex;
+}
+
+.search-box .parent article:hover{
+    background-color: rgb(233, 232, 232);
+    border-radius: 40px;
+}
+
+.search-box .parent article:first-child{
+    height: inherit;
+    width: 33%;
+    /* background-color: red; */
+}
+.search-box .parent article:nth-child(2){
+    height: inherit;
+    width: 16.5%;
+    /* background-color: rgb(47, 255, 0); */
+}
+.search-box .parent article:nth-child(3){
+    height: inherit;
+    width: 16.5%;
+    /* background-color: rgb(85, 0, 255); */
+}
+
+.search-box .parent article:last-child{
+    height: inherit;
+    width: 34%;
+    /* background-color: rgb(255, 0, 166); */
+    display: flex;
+    position: relative;
+}
+.search-box .parent article i{
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgb(228, 77, 77);
+    border-radius: 50%;
+
+}
+.search-box .parent article b{
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+}
+.search-box .parent article p{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.card-parent{
+    width: 100%;
+}
+.card-parent .cards{
+    position: relative;
+    top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 20px;
+}
+.card-parent .cards .card{
+    height: 450px;
+    width: 315px;
+    padding: 5px;
+    position: relative;
+}
+.cards .card #btn{
+    background-color: white;
+    padding: 3px 7px 3px 7px;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 1px rgb(177, 176, 176);
+    font-size: 13px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.additional-section{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.additional-section p{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+.additional-section button{
+    background-color: rgb(34, 34, 34);
+    padding: 14px 24px 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-left: 20px;
+}
+.additional-section button:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: translate(0px, 2px);
+    transition: transform 0.2s;
+}
+
+.footer{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+.footer .footer-top{
+    height: 100px;
+    width: 100%;
+    padding: 30px;
+}
+.footer .footer-top h2{
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.footer .footer-top span{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.footer .footer-middle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.footer .footer-middle .box h3,p{
+    font-size: 14px;
+    color: gray;
+    margin-left: 30px;
+}
+.footer .footer-middle .box h3{
+    font-weight: 500;
+    color: black;
+}
