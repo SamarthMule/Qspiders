@@ -440,18 +440,58 @@ print("Global variable s:", s)  # Accessing global variable
 # Nonlocal variables are not available in the global scope.
 # They are only available in the enclosing scope.
 
-# Example of nonlocal variable
-j = 2000
-def my_function_new():
-    l = 3000  # This will create a new local variable l
-    print("Local variable l:", l)  # Accessing local variable
-    def inner_function_new():
-        nonlocal l  # Declare l as a nonlocal variable
-        l = 4000  # This will modify the nonlocal variable l
-        print("Nonlocal variable l:", l)  # Accessing nonlocal variable
-        print("Global variable j:", j)
-    inner_function_new()
-    print("Local variable l after modification:", l)  # Accessing local variable
-    print("Global variable j:", j)  # Accessing global variable
-my_function_new()
-print("Global variable l:", j)  # Accessing global variable
+# # Example of nonlocal variable
+# j = 2000
+# def my_function_new():
+#     l = 3000  # This will create a new local variable l
+#     print("Local variable l:", l)  # Accessing local variable
+#     def inner_function_new():
+#         nonlocal l  # Declare l as a nonlocal variable
+#         l = 4000  # This will modify the nonlocal variable l
+#         print("Nonlocal variable l:", l)  # Accessing nonlocal variable
+#         print("Global variable j:", j)
+#     inner_function_new()
+#     print("Local variable l after modification:", l)  # Accessing local variable
+#     print("Global variable j:", j)  # Accessing global variable
+# my_function_new()
+# print("Global variable l:", j)  # Accessing global variable
+
+print("\n Function with variable number of arguments : Packing and Unpacking")
+def sam(*args):
+    print(args)
+sam("pratik Sutar","Data Analyst")
+
+def add(*args):
+    print(args)
+    sum=0
+    for i in args:
+        sum+=i
+    print(sum)
+add(1,2,3,4,5,6,7,8,9,10)
+
+def man(**kwargs):
+    print(kwargs)
+man(name="Pratik",age=22,phone=7795868788)
+
+def home(args,*kwargs):
+    print(args,kwargs)
+home(1,2,3,4,5,a=20,b=30,c=40)
+
+# def home(**kwargs,*args): # This will give error because **kwargs should be at the end of the function definition
+#     print(args,kwargs)
+# home(1,2,3,4,5,a=20,b=30,c=40)
+
+# def home(args,*kwargs):
+#     print(args,kwargs)
+# home(a=20,b=30,c=40,1,2,3,4,5) # This will give error because *args should be at the end of the function definition
+
+num=[1,2,3]
+def fan(a,b,c):
+    print(a+b+c)
+fan(*num)
+
+d={'name':'pratik','age':20}
+def some(name,age):
+    print(name)
+    print(age)
+some(**d)
