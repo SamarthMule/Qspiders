@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-page{
+    height: 100vh;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-page .parent{
+    height: 500px;
+    width: 70%;
+    display: flex;
+}
+.parent .first{
+    height: 500px;
+    width: 50%;
+    background-color: rgb(141, 4, 141);
+    border-radius: 40px 0px 0px 40px;
+
+}
+.first img{
+    border-radius: 40px 0px 0px 40px;
+}
+.parent .second{
+    height: 500px;
+    width: 50%;
+    background-color: greenyellow;
+    border-radius: 0px 40px 40px 0px ;
+}

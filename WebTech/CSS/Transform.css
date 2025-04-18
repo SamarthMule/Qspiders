@@ -93,3 +93,90 @@ section{
     text-shadow: 0 0 5px red;
     font-weight: bold;
 }
+
+
+/* .navbar{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.navbar .box{
+    height: 90px;
+    width: 90px;
+    background-color: aqua;
+    opacity: 50%;
+}
+.navbar .box:hover{
+    transform: translate(1425px);
+    transform: translateY(1425px);
+    transform: translateY(-1425px) ;
+    transition: 3s;
+} */
+
+/* .box{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;    
+}
+
+.box:hover{
+    transform: translate(1425px) rotate(360deg);
+    transition: 3s;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(red, blue, orange, green, pink, purple, black, maroon, aqua, salmon, grey, crimson, royalblue, yellow,violet, brown, white, grey, red);
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 500px;
+}
+.box2:hover{
+    transform: translateY(-500px) rotateX(720deg);
+    transition: 2s;
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    border: 30px solid white;
+    border-top: 30px solid black;
+}
+
+.box3:hover{
+    transform: rotate(720deg);
+    transition: 3s;
+} */
+
+.box2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: conic-gradient(red,black,blueviolet,yellow,green,orange);
+    position: relative;
+    top: 600px;
+    left: 500px;
+}
+.box2:hover{
+    transform: translateY(-500px) rotateX(1080deg);
+    transition: 2s;
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 30px solid rgb(255,204,2);
+    border-top: 30px solid black;
+}
+
+.box3:hover{
+    transform: rotate(1080deg);
+    transition: 6s;
+}
