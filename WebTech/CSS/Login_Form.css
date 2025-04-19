@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Playfair Display", serif;
 }
 
-.main-page{
+.main-page {
     height: 100vh;
     width: 100%;
     background-color: salmon;
@@ -13,24 +14,176 @@
     justify-content: center;
 }
 
-.main-page .parent{
+.main-page .parent {
     height: 500px;
     width: 70%;
     display: flex;
 }
-.parent .first{
-    height: 500px;
-    width: 50%;
-    background-color: rgb(141, 4, 141);
-    border-radius: 40px 0px 0px 40px;
 
-}
-.first img{
-    border-radius: 40px 0px 0px 40px;
-}
-.parent .second{
+.parent .first {
     height: 500px;
     width: 50%;
-    background-color: greenyellow;
-    border-radius: 0px 40px 40px 0px ;
+    background-color: black;
+    border-radius: 40px 0px 0px 40px;
+    position: relative;
+    /* background-image: url("https://images.unsplash.com/photo-1573476492143-70270ca42661?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGlnZXIlMjBleWV8ZW58MHx8MHx8fDA%3D"); */
+    background-image: url("https://media.istockphoto.com/id/1487804277/video/animal-eyes-in-the-dark.jpg?s=640x640&k=20&c=KN8wSUfVd802Shb15M2XUL8PMhuyDZztEDiYyan7mls=");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:screen;
+}
+
+.first img {
+    border-radius: 40px 0px 0px 40px;
+}
+
+.parent .first h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    color: rgb(209, 148, 52);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.parent .first i {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    top: 50px;
+    left: 250px;
+    color: rgb(209, 148, 52);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.parent .second {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(209, 148, 52);
+    background-color: black;
+    /* background: linear-gradient(to right, rgb(240, 174, 88), rgb(243, 174, 64)); */
+    border-radius: 0px 40px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.parent .second form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.parent .second form h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: rgb(141, 4, 141);
+    color: rgb(209, 148, 52);
+}
+
+.parent .second form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(209, 148, 52);
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: rgb(141, 4, 141);
+    color: rgb(209, 148, 52);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+.parent .second form input:focus {
+    border-bottom: 3px solid black;
+    transition: 0.5s;
+}
+.parent .second form input::placeholder {
+    /* color: rgba(104, 56, 104, 0.7); */
+    color: rgba(128, 103, 65, 0.7);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.parent .second form button {
+    width: 50%;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(141, 4, 141);
+    background-color: rgb(209, 148, 52);
+    transition: 0.5s;
+}
+.parent .second form button:hover {
+    color: white;
+    transition: 1s;
+    /* background-color: rgb(94, 2, 94); */
+    background-color: rgb(110, 70, 4);
+    transform: scale(1.1);
+}
+.parent .second form button:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+    color: white;
+    /* background-color: rgb(211, 5, 211); */
+    background-color: rgb(248, 163, 25);
+}
+
+.parent .second p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    /* color: rgb(141, 4, 141); */
+    color: rgb(209, 148, 52);
+}
+
+.parent .second section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.parent .second section i{
+    font-size: 30px;
+    /* color: rgb(141, 4, 141); */
+    color: rgb(209, 148, 52);
+    color: rgb(167, 106, 8);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.parent .second section i:hover{
+    color: rgb(110, 70, 4);
+    color: rgb(209, 148, 52);
+    transform: translate(0px, -10px);
+    transition: 0.5s;
+}
+.parent .second section i:active{
+    transform: translate(0px, 5px);
+    transition: 0.5s;
+    color: rgb(209, 148, 52);
 }
