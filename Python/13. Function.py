@@ -375,61 +375,61 @@
 # calculator()
 
 
-print("\n Global and Local Variables")
-# Example of global variable
-# A global variable is a variable that is defined outside of any function and can be accessed from anywhere in the code.
-# A local variable is a variable that is defined inside a function and can only be accessed from within that function.
+# print("\n Global and Local Variables")
+# # Example of global variable
+# # A global variable is a variable that is defined outside of any function and can be accessed from anywhere in the code.
+# # A local variable is a variable that is defined inside a function and can only be accessed from within that function.
 
-# Global variable
-x = 10
-y = 20
-def my_function():
-    print("This is my function.")
-    print("Global variable x:", x)  # Accessing global variable
-    y = 30  # This will create a new local variable y
-    print("Local variable y:", y)  # Accessing local variable
+# # Global variable
+# x = 10
+# y = 20
+# def my_function():
+#     print("This is my function.")
+#     print("Global variable x:", x)  # Accessing global variable
+#     y = 30  # This will create a new local variable y
+#     print("Local variable y:", y)  # Accessing local variable
 
-my_function()
-print("Global variable x:", x)  # Accessing global variable
-print("Global variable y:", y)  # Accessing global variable
+# my_function()
+# print("Global variable x:", x)  # Accessing global variable
+# print("Global variable y:", y)  # Accessing global variable
 
-m = 100
-n = 2000
-def my_function2():
-    global m  # Declare m as a global variable
-    m = 200  # This will modify the global variable m
-    print("Global variable m:", m)  # Accessing global variable
-    # print("Local variable n:", n)  # Accessing global variable giving error because n is not defined in this function
-    n = 3000  # This will create a new local variable n
-    print("Local variable n:", n)  # Accessing local variable
-my_function2()
-print("Global variable m:", m)  # Accessing global variable
-print("Global variable n:", n)  # Accessing global variable giving error because n is not defined in this function
+# m = 100
+# n = 2000
+# def my_function2():
+#     global m  # Declare m as a global variable
+#     m = 200  # This will modify the global variable m
+#     print("Global variable m:", m)  # Accessing global variable
+#     # print("Local variable n:", n)  # Accessing global variable giving error because n is not defined in this function
+#     n = 3000  # This will create a new local variable n
+#     print("Local variable n:", n)  # Accessing local variable
+# my_function2()
+# print("Global variable m:", m)  # Accessing global variable
+# print("Global variable n:", n)  # Accessing global variable giving error because n is not defined in this function
 
 
-# Local variable
-k = 1000
-l = 2000
-def my_function3():
-    k = 2000  # This will create a new local variable k
-    print("Local variable k:", k)  # Accessing local variable
-    print("Global variable l:", l)  # Accessing global variable
-my_function3()
+# # Local variable
+# k = 1000
+# l = 2000
+# def my_function3():
+#     k = 2000  # This will create a new local variable k
+#     print("Local variable k:", k)  # Accessing local variable
+#     print("Global variable l:", l)  # Accessing global variable
+# my_function3()
 
-s = 10000
-def my_new_function():
-    print("This is my new function.")
-    o = 3000  # This will create a new local variable o
-    print("Local variable o:", o)  # Accessing local variable
-    def inner_function():
-        s = 20000
-        print("Local variable s:", s)
-        print("Local variable o:", o)
-    inner_function()
-    print("Global variable s:", s)  # Accessing global variable
-    print("Local variable o:", o)  # Accessing local variable
-my_new_function()
-print("Global variable s:", s)  # Accessing global variable
+# s = 10000
+# def my_new_function():
+#     print("This is my new function.")
+#     o = 3000  # This will create a new local variable o
+#     print("Local variable o:", o)  # Accessing local variable
+#     def inner_function():
+#         s = 20000
+#         print("Local variable s:", s)
+#         print("Local variable o:", o)
+#     inner_function()
+#     print("Global variable s:", s)  # Accessing global variable
+#     print("Local variable o:", o)  # Accessing local variable
+# my_new_function()
+# print("Global variable s:", s)  # Accessing global variable
 
 
 # Example of nonlocal variable
@@ -456,42 +456,121 @@ print("Global variable s:", s)  # Accessing global variable
 # my_function_new()
 # print("Global variable l:", j)  # Accessing global variable
 
-print("\n Function with variable number of arguments : Packing and Unpacking")
-def sam(*args):
-    print(args)
-sam("pratik Sutar","Data Analyst")
+# print("\n Function with variable number of arguments : Packing and Unpacking")
+# # Packing and Unpacking are used to pass a variable number of arguments to a function.
+# # Packing is the process of collecting multiple arguments into a single argument.
 
-def add(*args):
-    print(args)
-    sum=0
-    for i in args:
-        sum+=i
-    print(sum)
-add(1,2,3,4,5,6,7,8,9,10)
+# # Unpacking is the process of extracting multiple arguments from a single argument.
+# # Packing is done using the * operator and Unpacking is done using the ** operator.
+# # Packing is used to pass a variable number of arguments to a function.
+# # Unpacking is used to extract multiple arguments from a single argument.
+# # Packing is done using the * operator and Unpacking is done using the ** operator.
+# # Packing is used to pass a variable number of arguments to a function.
+# # Unpacking is used to extract multiple arguments from a single argument.
 
-def man(**kwargs):
-    print(kwargs)
-man(name="Pratik",age=22,phone=7795868788)
+# # Packing 
+# def sam(*args):
+#     print(args)
+# sam("pratik Sutar","Data Analyst")
 
-def home(args,*kwargs):
-    print(args,kwargs)
-home(1,2,3,4,5,a=20,b=30,c=40)
+# def add(*args):
+#     print(args)
+#     sum=0
+#     for i in args:
+#         sum+=i
+#     print(sum)
+# add(1,2,3,4,5,6,7,8,9,10)
 
-# def home(**kwargs,*args): # This will give error because **kwargs should be at the end of the function definition
-#     print(args,kwargs)
-# home(1,2,3,4,5,a=20,b=30,c=40)
+# def man(**kwargs):
+#     print(kwargs)
+# man(name="Pratik",age=22,phone=7795868788)
 
 # def home(args,*kwargs):
 #     print(args,kwargs)
-# home(a=20,b=30,c=40,1,2,3,4,5) # This will give error because *args should be at the end of the function definition
+# home(1,2,3,4,5,a=20,b=30,c=40)
 
-num=[1,2,3]
-def fan(a,b,c):
-    print(a+b+c)
-fan(*num)
+# # def home(**kwargs,*args): # This will give error because **kwargs should be at the end of the function definition
+# #     print(args,kwargs)
+# # home(1,2,3,4,5,a=20,b=30,c=40)
 
-d={'name':'pratik','age':20}
-def some(name,age):
-    print(name)
-    print(age)
-some(**d)
+# # def home(args,*kwargs):
+# #     print(args,kwargs)
+# # home(a=20,b=30,c=40,1,2,3,4,5) # This will give error because *args should be at the end of the function definition
+
+# # Unpacking
+# # Unpacking is the process of extracting multiple arguments from a single argument.
+# # Unpacking is done using the * operator and ** operator.
+# # Unpacking is used to extract multiple arguments from a single argument.
+# num=[1,2,3]
+# def fan(a,b,c):
+#     print(a+b+c)
+# fan(*num)
+
+# d={'name':'pratik','age':20}
+# def some(name,age):
+#     print(name)
+#     print(age)
+# some(**d)
+
+
+# print("\nTypes Of Arguments")
+# 1. Positional Arguments
+# Positional arguments are the most common type of arguments.
+# They are passed to a function in the order in which they are defined.
+# They are also called required arguments.
+# 2. Keyword Arguments
+# Keyword arguments are passed to a function using the name of the parameter.
+# They are also called named arguments.
+# Keyword arguments can be passed in any order.
+# They are optional arguments.
+# 3. Default Arguments
+# Default arguments are the arguments that have a default value.
+# They are optional arguments.
+# If a default argument is not passed, the default value will be used.
+# Default arguments are defined using the assignment operator (=).
+# They are also called optional arguments.
+# 4. Variable-length Arguments
+# Variable-length arguments are the arguments that can take any number of values.
+# They are also called arbitrary arguments.
+# They are defined using the * operator.
+# They can take any number of values.
+# They are used to pass a variable number of arguments to a function.
+
+print("\nWAP to add minimum 2 numbers and maximum 5 numbers")
+def add(num1,num2,num3=0,num4=0,num5=0):
+    return num1+num2+num3+num4+num5
+print(add(1,2)) # 3
+print(add(1,2,3)) # 6
+print(add(1,2,3,4,5)) # 15
+
+print("\nWAP to find the product of minimum 3 and maximum 7 numbers ")
+def product(num1,num2,num3,num4=1,num5=1,num6=1,num7=1):
+    return num1*num2*num3*num4*num5*num6*num7
+print(product(1,2,3)) # 6
+print(product(4,8,2,9,3,6,5)) # 51840
+
+print("\nWAP to extract float numbers from tuple")
+def extract_float(tuple):
+    for i in tuple:
+        if type(i) == float:
+            print(i, end=" ")
+extract_float((2,3.9,4,5.2,6))
+
+print("\nWAP to find the sum of individual digits in a given int.")
+def sum_of_digits(num):
+    sum = 0
+    while num > 0:
+        sum += num % 10
+        num //= 10
+    return sum
+print(sum_of_digits(12345)) # 15
+
+print("\nWAP to check even, odd (Input in form of packing (*nums))")
+def check_even_odd(*nums):
+    for i in nums:
+        if i % 2 == 0:
+            print(i , " is even")
+        else:
+            print(i , " is odd")
+
+check_even_odd(1,2,3,4,5,6,7,8,9,10)

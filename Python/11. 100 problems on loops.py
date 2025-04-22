@@ -925,232 +925,232 @@
 # else:
 #     print("Not a xylem number")
     
-print("\nQ83. Write a program to check weather the given number is phloem number or not. i.e, 12345→ 1+5!=2+3+4 ")
-num = int(input("Enter any number : "))
-i = 0
-sum1 = 0
-sum2 = 0
-length = len(str(num))
-while num != 0:
-    digit = num % 10
-    if i == 0 or i == length - 1:
-        sum1 += digit
-    else:
-        sum2 += digit
-    num //= 10
-    i += 1
-if sum1 == sum2:
-    print("Phloem number")
-else:
-    print("Not a phloem number")
+# print("\nQ83. Write a program to check weather the given number is phloem number or not. i.e, 12345→ 1+5!=2+3+4 ")
+# num = int(input("Enter any number : "))
+# i = 0
+# sum1 = 0
+# sum2 = 0
+# length = len(str(num))
+# while num != 0:
+#     digit = num % 10
+#     if i == 0 or i == length - 1:
+#         sum1 += digit
+#     else:
+#         sum2 += digit
+#     num //= 10
+#     i += 1
+# if sum1 == sum2:
+#     print("Phloem number")
+# else:
+#     print("Not a phloem number")
 
-print("\nQ84. Write a program to check weather the given number is neon number or not i.e. 9 is number, 9**2=81→8+1=9")
-num = int(input("Enter any number : "))
-i = 0
-sum = 0
-square = num ** 2
-while square != 0:
-    digit = square % 10
-    sum += digit
-    square //= 10
-if sum == num:
-    print("Neon number")
-else:
-    print("Not a neon number")
+# print("\nQ84. Write a program to check weather the given number is neon number or not i.e. 9 is number, 9**2=81→8+1=9")
+# num = int(input("Enter any number : "))
+# i = 0
+# sum = 0
+# square = num ** 2
+# while square != 0:
+#     digit = square % 10
+#     sum += digit
+#     square //= 10
+# if sum == num:
+#     print("Neon number")
+# else:
+#     print("Not a neon number")
 
-print("\nQ85. Write a program to check weather the given number is automorphic or not I.e.5 is number 5**2=25 last digit of 25 is the number itself")
-num = int(input("Enter any number : "))
-i = 0
-square = num ** 2
-last_digit = 0
-while square != 0:
-    last_digit = square % 10
-    square //= 10
-if last_digit == num:
-    print("Automorphic number")
-else:
-    print("Not an automorphic number")
+# print("\nQ85. Write a program to check weather the given number is automorphic or not I.e.5 is number 5**2=25 last digit of 25 is the number itself")
+# num = int(input("Enter any number : "))
+# i = 0
+# square = num ** 2
+# last_digit = 0
+# while square != 0:
+#     last_digit = square % 10
+#     square //= 10
+# if last_digit == num:
+#     print("Automorphic number")
+# else:
+#     print("Not an automorphic number")
 
-print("\nQ86. Write a program to count number of words in the given string. s=input('enter the str:').split() ")
-s = input("Enter the string : ")
-s = s.split()
-i = 0
-count = 0
-while i < len(s):
-    count += 1
-    i += 1
-print("Number of words : ", count)
-
-print("\nQ87. Write a program to find the length of the longest word")
-s = input("Enter the string : ")
-s = s.split()
-i = 0
-longest_word = ""
-while i < len(s):
-    if len(s[i]) > len(longest_word):
-        longest_word = s[i]
-    i += 1
-print("Longest word : ", longest_word)
-
-print("\nQ88. Write a program to count number of consonants in the given string. s=input('enter the str:')")
-s = input("Enter the string : ")
-i = 0
-count = 0
-while i < len(s):
-    if s[i] not in "aeiouAEIOU" and 'a' <= s[i] <= 'z' or 'A' <= s[i] <= 'Z':
-        count += 1
-    i += 1
-print("Number of consonants : ", count)
-
-print("\nQ89. Write a program to check the type of data entered by the users")
-s = input("Enter the string : ")
-i = 0
-while i < len(s):
-    if s[i].isdigit():
-        print(s[i], "is digit")
-    elif s[i].isalpha():
-        print(s[i], "is alphabet")
-    elif s[i].isspace():
-        print(s[i], "is space")
-    else:
-        print(s[i], "is special character")
-    i += 1
-
-
-print("\nQ90. Write a program to check weather the given tuple is palindrome or not ")
-t = eval(input("Enter the tuple : "))
-i = 0
-j = len(t) - 1
-is_palindrome = True
-while i < j:
-    if t[i] != t[j]:
-        is_palindrome = False
-        break
-    i += 1
-    j -= 1
-if is_palindrome:
-    print("Palindrome tuple")
-else:
-    print("Not a palindrome tuple")
-
-print("\nQ91. Write a program to check weather the given collection is having nested collection or not")
-k = eval(input("Enter the collection : "))
-i = 0
-is_nested = False
-while i < len(k):
-    if type(k[i]) == list or type(k[i]) == tuple or type(k[i]) == set or type(k[i]) == dict or type(k[i]) == str:
-        is_nested = True
-        break
-    i += 1
-if is_nested:
-    print("Nested collection found")
-else:
-    print("Not any a nested collection found")
-
-print("\nQ92. Write a program to return the positions of vowels present in the given string ")
-s = input("Enter the string : ")
-i = 0
-positions = []
-while i < len(s):
-    if s[i] in "aeiouAEIOU":
-        positions.append(i)
-    i += 1
-print("Positions of vowels : ", positions)
-
-print("\nQ93. Write a program to find length of collection without using len function ")
-k = eval(input("Enter the collection : "))
-count = 0
-while True:
-    try:
-        k[count]
-    except IndexError:
-        break
-    count += 1
-print("Length of collection : ", count)
-
-print("Write a program to whether the entered username  and password is correct or not if not correct print enter again")
-username = 'samarthmule'
-password = 'jbdij@%&272'
-while True:
-    username_n = input("Enter username : ")
-    if username == username_n:
-        break
-    else :
-        print("Not Correct. Try Again")
-while True:
-    pass_n = input("Enter Password: ")
-    if password == pass_n:
-        break
-    else :
-        print("Not correct. Try Again")
-
-print("\nQ95. Write a program to extract all integer data items from tuple ")
-t = eval(input("Enter the tuple : "))
-i = 0
-output = []
-while i < len(t):
-    if type(t[i]) == int:
-        output.append(t[i])
-    i += 1
-print("Output : ", output)
-
-print("\nQ96. Write a  program to extract all the non default values from the list ")
-x = eval(input("Enter the list : "))
-i = 0
-output = []
-while i < len(x):
-    if x[i] != 0 and x[i] != 1 and x[i] != -1 and x[i] != None:
-        output.append(x[i])
-    i += 1
-print("Output : ", output)
-
-print('''\nQ97. Write a program to get the following output: 
-Input='hai hello how are you' 
-output='hai**hello**how**are**you' ''')
+# print("\nQ86. Write a program to count number of words in the given string. s=input('enter the str:').split() ")
 # s = input("Enter the string : ")
-s = 'hai hello how are you'
-output = ""
-i = 0
-while i < len(s):
-    if s[i] != ' ':
-        output += s[i]
-    else:
-        output += '**'
-    i += 1
-print("Output : ", output)
+# s = s.split()
+# i = 0
+# count = 0
+# while i < len(s):
+#     count += 1
+#     i += 1
+# print("Number of words : ", count)
 
-print("\nQ98. Write a program to reverse the given list")
-x = eval(input("Enter the list : "))
-i = 0
-output = []
-while i < len(x):
-    output.insert(0, x[i])
-    i += 1
-print("Output : ", output)
+# print("\nQ87. Write a program to find the length of the longest word")
+# s = input("Enter the string : ")
+# s = s.split()
+# i = 0
+# longest_word = ""
+# while i < len(s):
+#     if len(s[i]) > len(longest_word):
+#         longest_word = s[i]
+#     i += 1
+# print("Longest word : ", longest_word)
 
-print("\nQ99. Write a program for number game")
-import random
-number = random.randint(1, 100)
-while True:
-    guess = int(input("Guess the number between 1 and 100 : "))
-    if guess < number:
-        print("Too low!")
-    elif guess > number:
-        print("Too high!")
-    else:
-        print("Congratulations! You guessed the number.")
-        break
+# print("\nQ88. Write a program to count number of consonants in the given string. s=input('enter the str:')")
+# s = input("Enter the string : ")
+# i = 0
+# count = 0
+# while i < len(s):
+#     if s[i] not in "aeiouAEIOU" and 'a' <= s[i] <= 'z' or 'A' <= s[i] <= 'Z':
+#         count += 1
+#     i += 1
+# print("Number of consonants : ", count)
 
-print("\nQ100. Write a program to print 'Thank you' for n times")
-n = int(input("Enter any number : "))
-i = 0
-while i < n:
-    print("Thank you")
-    i += 1
+# print("\nQ89. Write a program to check the type of data entered by the users")
+# s = input("Enter the string : ")
+# i = 0
+# while i < len(s):
+#     if s[i].isdigit():
+#         print(s[i], "is digit")
+#     elif s[i].isalpha():
+#         print(s[i], "is alphabet")
+#     elif s[i].isspace():
+#         print(s[i], "is space")
+#     else:
+#         print(s[i], "is special character")
+#     i += 1
+
+
+# print("\nQ90. Write a program to check weather the given tuple is palindrome or not ")
+# t = eval(input("Enter the tuple : "))
+# i = 0
+# j = len(t) - 1
+# is_palindrome = True
+# while i < j:
+#     if t[i] != t[j]:
+#         is_palindrome = False
+#         break
+#     i += 1
+#     j -= 1
+# if is_palindrome:
+#     print("Palindrome tuple")
+# else:
+#     print("Not a palindrome tuple")
+
+# print("\nQ91. Write a program to check weather the given collection is having nested collection or not")
+# k = eval(input("Enter the collection : "))
+# i = 0
+# is_nested = False
+# while i < len(k):
+#     if type(k[i]) == list or type(k[i]) == tuple or type(k[i]) == set or type(k[i]) == dict or type(k[i]) == str:
+#         is_nested = True
+#         break
+#     i += 1
+# if is_nested:
+#     print("Nested collection found")
+# else:
+#     print("Not any a nested collection found")
+
+# print("\nQ92. Write a program to return the positions of vowels present in the given string ")
+# s = input("Enter the string : ")
+# i = 0
+# positions = []
+# while i < len(s):
+#     if s[i] in "aeiouAEIOU":
+#         positions.append(i)
+#     i += 1
+# print("Positions of vowels : ", positions)
+
+# print("\nQ93. Write a program to find length of collection without using len function ")
+# k = eval(input("Enter the collection : "))
+# count = 0
+# while True:
+#     try:
+#         k[count]
+#     except IndexError:
+#         break
+#     count += 1
+# print("Length of collection : ", count)
+
+# print("Write a program to whether the entered username  and password is correct or not if not correct print enter again")
+# username = 'samarthmule'
+# password = 'jbdij@%&272'
+# while True:
+#     username_n = input("Enter username : ")
+#     if username == username_n:
+#         break
+#     else :
+#         print("Not Correct. Try Again")
+# while True:
+#     pass_n = input("Enter Password: ")
+#     if password == pass_n:
+#         break
+#     else :
+#         print("Not correct. Try Again")
+
+# print("\nQ95. Write a program to extract all integer data items from tuple ")
+# t = eval(input("Enter the tuple : "))
+# i = 0
+# output = []
+# while i < len(t):
+#     if type(t[i]) == int:
+#         output.append(t[i])
+#     i += 1
+# print("Output : ", output)
+
+# print("\nQ96. Write a  program to extract all the non default values from the list ")
+# x = eval(input("Enter the list : "))
+# i = 0
+# output = []
+# while i < len(x):
+#     if x[i] != 0 and x[i] != 1 and x[i] != -1 and x[i] != None:
+#         output.append(x[i])
+#     i += 1
+# print("Output : ", output)
+
+# print('''\nQ97. Write a program to get the following output: 
+# Input='hai hello how are you' 
+# output='hai**hello**how**are**you' ''')
+# # s = input("Enter the string : ")
+# s = 'hai hello how are you'
+# output = ""
+# i = 0
+# while i < len(s):
+#     if s[i] != ' ':
+#         output += s[i]
+#     else:
+#         output += '**'
+#     i += 1
+# print("Output : ", output)
+
+# print("\nQ98. Write a program to reverse the given list")
+# x = eval(input("Enter the list : "))
+# i = 0
+# output = []
+# while i < len(x):
+#     output.insert(0, x[i])
+#     i += 1
+# print("Output : ", output)
+
+# print("\nQ99. Write a program for number game")
+# import random
+# number = random.randint(1, 100)
+# while True:
+#     guess = int(input("Guess the number between 1 and 100 : "))
+#     if guess < number:
+#         print("Too low!")
+#     elif guess > number:
+#         print("Too high!")
+#     else:
+#         print("Congratulations! You guessed the number.")
+#         break
+
+# print("\nQ100. Write a program to print 'Thank you' for n times")
+# n = int(input("Enter any number : "))
+# i = 0
+# while i < n:
+#     print("Thank you")
+#     i += 1
 
 
 # Same 100 Programs in for loop
-print("\n\n\nSame 100 Programs in for loop")
+# print("\n\n\nSame 100 Programs in for loop")
 # print("\nQ1. Write a program to print the following using while loop First 10 Even numbers ")
 # for i in range(0, 20, 2):
 #     print(i, end=" ")
@@ -1880,3 +1880,182 @@ print("\n\n\nSame 100 Programs in for loop")
 #     print(num, "is a Xylem number.")
 # else:
 #     print(num, "is not a Xylem number.")
+
+# print("\nQ83. Write a program to check weather the given number is phloem number or not. i.e, 12345→ 1+5!=2+3+4 ")
+# num = int(input("Enter any number : "))
+# sum1 = 0
+# sum2 = 0
+# for i in str(num):
+#     sum1 += int(i)
+#     sum2 += int(str(num)[-1 - str(num).index(i)])
+# if sum1 != sum2:
+#     print(num, "is a phloem number.")
+# else:
+#     print(num, "is not a phloem number.")
+
+# print("\nQ84. Write a program to check weather the given number is neon number or not i.e. 9 is number, 9**2=81→8+1=9")
+# num = int(input("Enter any number : "))
+# square = num ** 2
+# for i in str(square):
+#     sum += int(i)
+# if sum == num:
+#     print(num, "is a neon number.")
+# else:
+#     print(num, "is not a neon number.")
+    
+# print("\nQ85. Write a program to check weather the given number is automorphic or not I.e.5 is number 5**2=25 last digit of 25 is the number itself")
+# num = int(input("Enter any number : "))
+# square = num ** 2
+# for i in str(square):
+#     if str(num) == str(square)[-len(str(num)):]:
+#         print(num, "is an automorphic number.")
+#         break
+#     else:
+#         print(num, "is not an automorphic number.")
+#         break
+
+# print("\nQ86. Write a program to count number of words in the given string. s=input('enter the str:').split() ")
+# s = input("Enter the string : ")
+# s = s.split()
+# count = 0
+# for i in s:
+#     count += 1
+# print("Number of words:", count)
+
+# print("\nQ87. Write a program to find the length of the longest word")
+# s = input("Enter the string : ")
+# s = s.split()
+# longest_word = ''
+# for i in s:
+#     if len(i) > len(longest_word):
+#         longest_word = i
+# print("Length of the longest word:", len(longest_word))
+
+# print("\nQ88. Write a program to count number of consonants in the given string. s=input('enter the str:')")
+# s = input("Enter the string : ")
+# count = 0
+# for i in s:
+#     if i.isalpha() and i not in 'aeiouAEIOU':
+#         count += 1
+# print("Number of consonants:", count)
+
+# print("\nQ89. Write a program to check the type of data entered by the users")
+# s = input("Enter the string : ")
+# for i in s:
+#     if 'a' <= i <= 'z' or 'A' <= i <= 'Z':
+#         print(i, "is a character")
+#     elif '0' <= i <= '9':
+#         print(i, "is a digit")
+#     elif i == ' ':
+#         print(i, "is space")
+#     else:
+#         print(i, "is special character")
+
+# print("\nQ90. Write a program to check weather the given tuple is palindrome or not ")
+# t = eval(input("Enter the tuple : "))
+# is_palindrome = True
+# j = len(t) - 1
+# for i in range(len(t) // 2):
+#     if t[i] != t[j]:
+#         is_palindrome = False
+#         break
+#     j -= 1
+# if is_palindrome:
+#     print("Tuple is palindrome")
+# else:
+#     print("Tuple is not palindrome")
+    
+# print("\nQ91. Write a program to check weather the given collection is having nested collection or not")
+# k = eval(input("Enter the collection : "))
+# is_nested = False
+# for i in k:
+#     if type(i) == list or type(i) == tuple or type(i) == set:
+#         is_nested = True
+#         break
+# if is_nested:
+#     print("The collection is nested.")
+# else:
+#     print("The collection is not nested.")
+
+# print("\nQ92. Write a program to return the positions of vowels present in the given string ")
+# s = input("Enter the string : ")
+# positions = []
+# for i in range(len(s)):
+#     if s[i] in 'aeiouAEIOU':
+#         positions.append(i)
+# print("Positions of vowels : ", positions)
+
+# print("\nQ93. Write a program to find length of collection without using len function ")
+# k = eval(input("Enter the collection : "))
+# count = 0
+# for _ in k:
+#     count += 1
+# print("Length of the collection:", count)
+
+# print("Write a program to whether the entered username  and password is correct or not if not correct print enter again")
+# username = 'samarthmule'
+# password = 'jbdij@%&272'
+# for _ in range(3):
+#     user_input = input("Enter username : ")
+#     pass_input = input("Enter password : ")
+#     if user_input == username and pass_input == password:
+#         print("Login successful")
+#         break
+#     else:
+#         print("Invalid username or password. Please try again.")
+
+# print("\nQ95. Write a program to extract all integer data items from tuple ")
+# t = eval(input("Enter the tuple : "))
+# output = []
+# for i in t:
+#     if type(i) == int:
+#         output.append(i)
+# print("Output : ", output)
+
+# print("\nQ96. Write a  program to extract all the non default values from the list ")
+# x = eval(input("Enter the list : "))
+# output = []
+# for i in x:
+#     if type(i) != int and type(i) != float and type(i) != str:
+#         output.append(i)
+# print("Output : ", output)
+
+# print('''\nQ97. Write a program to get the following output: 
+# Input='hai hello how are you' 
+# output='hai**hello**how**are**you' ''')
+# # s = input("Enter the string : ")
+# s = 'hai hello how are you'
+# output = ""
+# for word in s.split():
+#     output += word + '**'
+# output = output[:-2]
+# print("Output:", output)
+
+# print("\nQ98. Write a program to reverse the given list")
+# x = eval(input("Enter the list : "))
+# output = []
+# for i in range(len(x) - 1, -1, -1):
+#     output.append(x[i])
+# print("Reversed list:", output)
+
+# print("\nQ99. Write a program for number game")
+# import random
+# number = random.randint(1, 100)
+# attempts = 0
+# for _ in range(5):
+#     guess = int(input("Guess the number (1-100): "))
+#     attempts += 1
+#     if guess < number:
+#         print("Too low!")
+#     elif guess > number:
+#         print("Too high!")
+#     else:
+#         print("Congratulations! You guessed the number in", attempts, "attempts.")
+#         break
+# else:
+#     print("Sorry! The correct number was", number)
+    
+# print("\nQ100. Write a program to print 'Thank you' for n times")
+# n = int(input("Enter any number : "))
+# for i in range(n):
+#     print("Thank you")

@@ -1,0 +1,100 @@
+.box{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: conic-gradient(red, green, blue, red);
+    animation-name: rotateEle;
+    animation-duration: 5s;
+    animation-direction:normal;
+    /* smooth continuous rotation + party color animation */
+    /* display: inline-block; */
+    animation: rotateEle 5s linear infinite;
+}
+
+@keyframes rotateEle {
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.bulb {
+    /* display: inline-block; */
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    animation: partynight 0.8s linear 0s infinite alternate forwards;
+}
+@keyframes partynight{
+    0%{
+        background-color: red;
+        transform: translateX(0px);
+    }
+    10%{
+        background-color: blue;
+        transform: translateX(600px);
+    }
+    20%{
+        background-color: purple;
+        transform: translate(300px);
+    }
+    30%{
+        background-color: pink;
+        transform: translateX(0px);
+    }
+    40%{
+        background-color: violet;
+        transform: translateX(300px);
+    }
+    50%{
+        background-color: green;
+        transform: translateX(600px);
+    }
+    75%{
+        background-color: orange;
+        transform: translateX(300px);
+    }
+    100%{
+        background-color: blue;
+        transform: translateX(0px);
+    }
+}
+
+
+.element{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    animation: moveEle 7s ease infinite;
+    position: relative;
+    display: inlines;
+}
+
+@keyframes moveEle{
+    0%{
+        left: 0px;
+        top:0px;
+
+    }
+    25%{
+        left: 86%;
+        top: 0px;
+        /* background-color: greenyellow;
+        border-radius: 25%; */
+    }
+    50%{
+        left: 86%;
+        top: 550px;
+        background-color: blue;
+        border-radius: 50%;
+    }
+    75%{
+        left: 0px;
+        top: 550px;
+        /* background-color: greenyellow;
+        border-radius: 25%; */
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}

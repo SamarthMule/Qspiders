@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: #333;
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image{
+    height: 75px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 40px;
+    gap: 40px;
+    font-size: 20px;
+    padding: 10px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 15px;
+}
+.nav-menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: #a5a58d;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    color: #333;
+    transform: scale(1.1);
+}
+.nav-menu a.active{
+    color: black;
+    font-weight: 700;
+}
+
+.auth-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 40px;
+    gap: 20px;
+}
+.auth-buttons button{
+    background-color: #333;
+    color: #a5a58d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.auth-buttons button:hover{
+    background-color: #a5a58d;
+    color: #333;
+    transform: scale(1.1);
+}
+.auth-buttons button:focus{
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+.auth-buttons i{
+    font-size: 20px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.filters {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 40px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+#filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+#filter-form label {
+    font-size: 16px;
+    color: #333;
+}
+#filter-form select,
+#filter-form input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#filter-form select:focus,
+#filter-form input:focus {
+    outline: none;
+    border-color: #a5a58d;
+    box-shadow: 0 0 5px rgba(165,165,141,0.5);
+}
+#filter-form button {
+    background-color: #333;
+    color: #a5a58d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#filter-form button:hover {
+    background-color: #a5a58d;
+    color: #333;
+    transform: scale(1.05);
+}
+
+
+/* Cards section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 40px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.like {
+    position: absolute;
+    top: -45px;
+    right: 15px;
+    background: rgba(0,0,0,0.4);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.like:hover {
+    background: #a5a58d;
+}
+.like i {
+    color: #fff;
+    font-size: 16px;
+}
+.discount {
+    position: absolute;
+    top: -45px;
+    left: 15px;
+    background-color: #a5a58d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-section .price{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding: 5px 10px;
+}
+.price-section .old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+    padding: 5px 10px;
+}
+
+.add-to-cart {
+    align-self: flex-start;
+    background-color: #333;
+    color: #a5a58d;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.add-to-cart:hover {
+    background-color: #a5a58d;
+    color: #333;
+    transform: scale(1.05);
+}
+.card-content h3 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+}
+.card-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+.card-content span {
+    font-weight: 500;
+    color: #333;
+}
+.card-content .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.add-to-cart, .more-details {
+    width: 100%;
+    margin-top: 10px;
+    align-self: flex-start;
+    background-color: #333;
+    color: #a5a58d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.add-to-cart:hover, .more-details:hover {
+    background-color: #a5a58d;
+    color: #333;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links,
+.social-media {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-media i {
+    font-size: 30px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover,
+.social-media i:hover {
+    color: #a5a58d;
+    transform: scale(1.1);
+}
+
+.footer p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
