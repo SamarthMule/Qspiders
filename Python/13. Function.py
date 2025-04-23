@@ -536,41 +536,140 @@
 # They can take any number of values.
 # They are used to pass a variable number of arguments to a function.
 
-print("\nWAP to add minimum 2 numbers and maximum 5 numbers")
-def add(num1,num2,num3=0,num4=0,num5=0):
-    return num1+num2+num3+num4+num5
-print(add(1,2)) # 3
-print(add(1,2,3)) # 6
-print(add(1,2,3,4,5)) # 15
+# print("\nWAP to add minimum 2 numbers and maximum 5 numbers")
+# def add(num1,num2,num3=0,num4=0,num5=0):
+#     return num1+num2+num3+num4+num5
+# print(add(1,2)) # 3
+# print(add(1,2,3)) # 6
+# print(add(1,2,3,4,5)) # 15
 
-print("\nWAP to find the product of minimum 3 and maximum 7 numbers ")
-def product(num1,num2,num3,num4=1,num5=1,num6=1,num7=1):
-    return num1*num2*num3*num4*num5*num6*num7
-print(product(1,2,3)) # 6
-print(product(4,8,2,9,3,6,5)) # 51840
+# print("\nWAP to find the product of minimum 3 and maximum 7 numbers ")
+# def product(num1,num2,num3,num4=1,num5=1,num6=1,num7=1):
+#     return num1*num2*num3*num4*num5*num6*num7
+# print(product(1,2,3)) # 6
+# print(product(4,8,2,9,3,6,5)) # 51840
 
-print("\nWAP to extract float numbers from tuple")
-def extract_float(tuple):
-    for i in tuple:
-        if type(i) == float:
-            print(i, end=" ")
-extract_float((2,3.9,4,5.2,6))
+# print("\nWAP to extract float numbers from tuple")
+# def extract_float(tuple):
+#     for i in tuple:
+#         if type(i) == float:
+#             print(i, end=" ")
+# extract_float((2,3.9,4,5.2,6))
 
-print("\nWAP to find the sum of individual digits in a given int.")
-def sum_of_digits(num):
-    sum = 0
-    while num > 0:
-        sum += num % 10
-        num //= 10
-    return sum
-print(sum_of_digits(12345)) # 15
+# print("\nWAP to find the sum of individual digits in a given int.")
+# def sum_of_digits(num):
+#     sum = 0
+#     while num > 0:
+#         sum += num % 10
+#         num //= 10
+#     return sum
+# print(sum_of_digits(12345)) # 15
 
-print("\nWAP to check even, odd (Input in form of packing (*nums))")
-def check_even_odd(*nums):
-    for i in nums:
-        if i % 2 == 0:
-            print(i , " is even")
-        else:
-            print(i , " is odd")
+# print("\nWAP to check even, odd (Input in form of packing (*nums))")
+# def check_even_odd(*nums):
+#     for i in nums:
+#         if i % 2 == 0:
+#             print(i , " is even")
+#         else:
+#             print(i , " is odd")
 
-check_even_odd(1,2,3,4,5,6,7,8,9,10)
+# check_even_odd(1,2,3,4,5,6,7,8,9,10)
+
+# Recursion
+# Recursion is a programming technique where a function calls itself to solve a problem.
+# It is used to solve problems that can be broken down into smaller subproblems.
+# Recursion is a powerful tool, but it can also lead to infinite loops if not used carefully.
+# It is important to have a base case to stop the recursion.
+# A base case is a condition that stops the recursion.
+# It is the simplest case of the problem that can be solved without recursion.
+# Recursion can be used to solve problems such as factorial, Fibonacci series, and tower of Hanoi.
+
+# Two types of recursion:
+# 1. Without return value: A function that calls itself without returning a value.
+# Syntax:
+# def function_name(parameters):
+#     """docstring"""
+#     # termination condition:
+#     #     statement(s)
+#     #     return
+#     # statement(s)
+#     # function_name(parameters) #     # function calling itself
+
+# function_name(parameters) # function call
+
+# 2. With return value: A function that calls itself and returns a value.
+# Syntax:
+# def function_name(parameters):
+#     """docstring"""
+#     # termination condition:
+#     #     statement(s)
+#     #     return values
+#     # statement(s)
+#     # return function_name(parameters) # function calling itself and returning a value
+
+# function_name(parameters) # function call
+
+# Examples
+def factorial(n):
+    """Calculate the factorial of a number using recursion."""
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1) 
+
+print("Factorial of 5:", factorial(5))  # Output: 120
+print("Factorial of 0:", factorial(0))  # Output: 1 
+
+def fibonacci(n):
+    """Calculate the nth Fibonacci number using recursion."""
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2) 
+
+print("Fibonacci of 5:", fibonacci(5))  # Output: 5
+print("Fibonacci of 10:", fibonacci(10))  # Output: 55
+
+print("\nWAP to find the sum of n natural numbers using recursion")
+def sum_of_natural_numbers(n):
+    if n == 0:
+        return 0
+    
+    return n + sum_of_natural_numbers(n - 1)
+
+print("Sum of first 5 natural numbers:", sum_of_natural_numbers(5))  # Output: 15
+print("Sum of first 10 natural numbers:", sum_of_natural_numbers(10))  # Output: 55
+
+print('''WAP to print 5 4 3 2 1 2 3 4 5 if n=5 using recursion.''')
+def pattern(n):
+    if n == 1:
+        print(n, end=" ")
+        return 
+    
+    print(n, end=" ")
+    pattern(n-1)
+    print(n, end=" ")
+
+pattern(5) # 5 4 3 2 1 2 3 4 5
+
+print("\nWAP to find the sum of all integers in given list using recursion")
+def sum_of_integers(lst):
+    if not lst:
+        return 0
+    if isinstance(lst[0], int):
+        return lst[0] + sum_of_integers(lst[1:])
+    return sum_of_integers(lst[1:])
+
+l = [1, 2, 3, 4, 5]
+print("Sum of integers in list:", sum_of_integers(l))
+
+print('''\nWAP to print following:
+      l = ['hey', 76, True, 56, 'data', 'nice', False]
+      output : ['yehhey', 76, True, 56, 'ataddate', 'ecinnice', False]''')
+
+print("\nWAP to reseverse the given string without using slicing")
+print("\nWAP to chech whether the data is palindrome or not")
+print("\nWAP to find the lenght of given list without using inbuilt function")
+print("\nWAP to find the maximum counted number in the list")

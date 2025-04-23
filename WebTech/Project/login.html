@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./Images/Logo.png" alt="Logo" class="logo-image">
+        <nav class="nav-menu">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./products.html">Products</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="auth-buttons">
+            <i class="fa-solid fa-cart-shopping">
+                <span class="numberofitems">4</span>
+            </i>
+            <button class="login-button" onclick="window.location.href='./login.html'">Login</button>
+            <button class="signup-button" onclick="window.location.href='./signup.html'">Sign Up</button>
+        </div>
+    </header>
+    <section class="form">
+        <form action="" method="">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="remember-me">
+                <input type="checkbox" id="remember-me" name="remember-me"> Remember Me
+            </label>
+            <br>
+            <button type="submit">Submit</button>
+            <p>Don't have an account? <a href="./signup.html">Sign Up</a></p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms of Service</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p> &copy; 2025 NaturalGlow. All rights reserved.</p>
+    </footer>
+</body>
+</html>
