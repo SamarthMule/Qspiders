@@ -1,0 +1,79 @@
+
+1. Basic Commands
+----------------------------------------------------------------------
+show dbs   // List all databases
+use myDatabase   // Switch to (or create) database 
+db  // Show current database
+show collections  // List collections in current DB
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+2. CRUD Operations
+----------------------------------------------------------------------
+Create/ Insert
+--------------------------------
+db.example.insertOne({name: "A"})    // Insert one document
+db.example.insertMany([{name: "B"}, {name:"C"}])      // Insert Many
+--------------------------------
+Read/Retrive
+--------------------------------
+db.example.find()   // Find all document
+db.example.findOne({name: "B")  // Find one
+db.example.find({age : {$lt : 18}}) // Find with condition
+db.example.find().pretty()   // Prettify output
+db.example.find({age: 1})   // Find all document sorted in ascending
+db.example.find({age: -1})   // Find all document sorted in descending
+--------------------------------
+Update/Modify
+--------------------------------
+db.example.updateOne(
+  { name: "Alice" },
+  { $set: { age: 26 } }
+ )                                 // Update One
+ db.example.updateMany(
+  { age: { $lt: 18 } },
+  { $set: { status: "minor" } }
+ )                                 // Update Many
+--------------------------------
+Delete
+--------------------------------
+db.example.deleteOne({ name: "C" })             // Delete one
+db.example.deleteMany({ age: { $lt: 18 } })     // Delete many
+--------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+ 3. Collection Operations
+--------------------------------
+db.createCollection("products")       // Create collection
+db.products.drop()                    // Delete collection
+--------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+4. Indexing
+--------------------------------
+db.users.createIndex({ name: 1 })     // Create ascending index
+ db.users.getIndexes()                 // List indexes
+--------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+5. Aggregation
+--------------------------------
+db.orders.aggregate([
+  { $match: { status: "delivered" } },
+  { $group: { _id: "$customerId", total: { $sum: "$amount" } } }
+ ])
+--------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+6. Miscellaneous
+--------------------------------
+db.stats()                            // DB statistics
+db.users.stats()                      // Collection stats
+db.users.countDocuments()            // Count document
+--------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
