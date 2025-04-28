@@ -53,7 +53,6 @@
 # print("Hello World".isalnum())  # False
 # print("Hello World".isnumeric())  # False
 # print("Hello World".isdecimal())  # False
-# print("Hello World".isnumeric())  # False
 # print("Hello World".isupper())  # False
 # print("Hello World".islower())  # False
 # print("Hello World".istitle())  # True
@@ -153,7 +152,7 @@
 # The function name should be descriptive and should follow the naming conventions of Python.   
 # The function can take any number of parameters, including zero parameters.
 
-# print("\n User-defined Functions")
+# print("\n User-defined Functions Types")
 # print("1) Function with no parameters and no return value")
 # def greet():
 #     print("Hello World!")
