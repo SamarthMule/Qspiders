@@ -379,7 +379,7 @@
 # customer1.display_details()  # This will raise an error because customer1 is deleted
 
 # Type of Methods in Python
-# 1. Oject Method
+# 1. Object Method
 # 2. Class Method
 # 3. Static Method
 
@@ -388,6 +388,159 @@
 # Object methods are used to perform operations on the object and can be called using the object name followed by the method name and parentheses. They can also take additional parameters if needed.
 # Object methods can return values or perform actions without returning anything. They are typically used to implement the behavior of the object and define how it interacts with other objects and the outside world.
 # Object methods can also raise exceptions if there are any errors during the execution of the method. This allows you to handle errors gracefully and provide meaningful error messages to the user.
+
+# class Bank:
+#     bank_name = "Bank of Maharashtra"
+#     location = "Pune"
+#     interest_rate = 5.5
+#     phone_number = 1234567890
+
+#     # Constructor / __init__ method
+#     def __init__(self, customer_name, account_number, balance, account_type, email, mobile_number, address):
+#         self.customer_name = customer_name
+#         self.account_number = account_number
+#         self.balance = balance
+#         self.account_type = account_type
+#         self.email = email
+#         self.mobile_number = mobile_number
+#         self.address = address
+
+#     # Object Method
+#     def display_details(self):
+#         print("\nCustomer Details:\n")
+#         print("Customer Name:", self.customer_name)
+#         print("Account Number:", self.account_number)
+#         print("Balance:", self.balance)
+#         print("Account Type:", self.account_type)
+#         print("Email:", self.email)
+#         print("Mobile Number:", self.mobile_number)
+#         print("Address:", self.address)
+
+# customer1 = Bank("Aashish Kumar", 1001, 5000.0, "Savings", "aashish.kumar@example.com", 9876543210, "123 Main St, Pune")
+# customer2 = Bank("Virat Patil", 1002, 10000.0, "Current", "virat.patil@example.com", 9876543211, "456 Second St, Pune")
+
+# Bank.display_details(customer1) # Calling the class method to display customer details using the class name
+# customer1.display_details()  # Calling the object method to display customer details using the object name
+
+# customer2.display_details()
+
+
+# 2. Class Method
+# Class methods are methods that are bound to the class and not the instance of the class. They are defined using the @classmethod decorator and take cls as the first parameter. The cls parameter refers to the class itself, not the instance of the class. Class methods can access and modify class variables but cannot access instance variables directly.
+# Class methods are typically used for factory methods, which are methods that return an instance of the class. They can also be used to perform operations that are related to the class itself rather than to a specific instance of the class.
+# Class methods can be called using the class name or the instance of the class. They can also take additional parameters if needed.
+# Class methods can return values or perform actions without returning anything. They are typically used to implement operations that are related to the class itself and define how it interacts with other classes and the outside world.
+# Class methods can also raise exceptions if there are any errors during the execution of the method. This allows you to handle errors gracefully and provide meaningful error messages to the user.
+# Class methods can also be used to create alternative constructors for the class. This allows you to create instances of the class using different sets of parameters or from different data sources.
+# Class methods can also be used to implement class-level operations that are not specific to any instance of the class. This allows you to define operations that are related to the class itself and not to any specific instance of the class.
+
+# class Bank:
+#     bank_name = "Bank of Maharashtra"
+#     location = "Pune"
+#     interest_rate = 5.5
+#     phone_number = 1234567890
+
+#     # Constructor / __init__ method
+#     def __init__(self, customer_name, account_number, balance, account_type, email, mobile_number, address):
+#         self.customer_name = customer_name
+#         self.account_number = account_number
+#         self.balance = balance
+#         self.account_type = account_type
+#         self.email = email
+#         self.mobile_number = mobile_number
+#         self.address = address
+
+#     # Class Method
+#     @classmethod
+#     def display_class_details(cls):
+#         print("\nBank Details:\n")
+#         print("Bank Name:", cls.bank_name)
+#         print("Location:", cls.location)
+#         print("Interest Rate:", cls.interest_rate)
+#         print("Phone Number:", cls.phone_number)
+    
+#     @classmethod
+#     def update_location(cls, new_location):
+#         cls.location = new_location
+#         print(f"Location updated to: {cls.location}")
+    
+
+# customer3 = Bank("Rohit Joshi", 1003, 15000.0, "Savings", "rohit.joshi@example.com", 9876543212, "789 Third St, Pune")
+# customer4 = Bank("Aaush Deshmukh", 1004, 20000.0, "Current", "aaush.deshmukh@example.com", 9876543213, "101 Fourth St, Pune")
+
+# customer3.display_class_details()  # Calling the class method to display bank details using the object name
+# Bank.display_class_details()  # Calling the class method to display bank details using the class name
+
+# Bank.location = "Mumbai"  # Changing the class variable using the class name
+# Bank.display_class_details()  # Calling the class method to display bank details using the object name
+
+# Bank.update_location("Delhi")  # Changing the class variable using the class method
+# Bank.display_class_details()  # Calling the class method to display bank details using the class name
+
+# class School:
+#     School_name = "XYZ High School"
+#     location = "Pune"
+#     principal_name = "Mr. Sharma"
+#     contact_number = 1234567890
+#     website = "www.xyzhighschool.com"
+    
+#     def __init__(self, student_name, roll_number, grade, email, mobile_number, address):
+#         self.student_name = student_name
+#         self.roll_number = roll_number
+#         self.grade = grade
+#         self.email = email
+#         self.mobile_number = mobile_number
+#         self.address = address
+    
+#     def display_details(self):
+#         print("\nStudent Details:\n")
+#         print("Student Name:", self.student_name)
+#         print("Roll Number:", self.roll_number)
+#         print("Grade:", self.grade)
+#         print("Email:", self.email)
+#         print("Mobile Number:", self.mobile_number)
+#         print("Address:", self.address)
+    
+#     @classmethod
+#     def display_class_details(cls):
+#         print("\nSchool Details:\n")
+#         print("School Name:", cls.School_name)
+#         print("Location:", cls.location)
+#         print("Principal Name:", cls.principal_name)
+#         print("Contact Number:", cls.contact_number)
+#         print("Website:", cls.website)
+    
+#     @classmethod
+#     def update_location(cls, new_location):
+#         cls.location = new_location
+#         print(f"Location updated to: {cls.location}")
+    
+#     @classmethod
+#     def update_principal(cls, new_principal):
+#         cls.principal_name = new_principal
+#         print(f"Principal updated to: {cls.principal_name}")
+
+# student1 = School("John Doe", 1, "10th", "john.doe@example.com", 9876543210, "123 Main St, Pune")
+# student2 = School("Jane Smith", 2, "9th", "jane.smith@example.com", 9876543211, "456 Second St, Pune")
+# student3 = School("Amit Patil", 3, "8th", "amit.patil@example.com", 9876543212, "789 Third St, Pune")
+
+# School.display_class_details()
+# student1.display_details() 
+
+# student1.update_location("Mumbai")
+# School.display_class_details()
+
+# School.update_principal("Mrs. Gupta")
+# School.display_class_details()
+
+
+# 3. Static Method
+# Static methods are methods that do not depend on the instance or class. They are defined using the @staticmethod decorator and do not take self or cls as the first parameter. Static methods cannot access or modify instance variables or class variables directly. They are typically used for utility functions that are related to the class but do not require access to instance or class variables.
+# Static methods can be called using the class name or the instance of the class. They can also take additional parameters if needed.
+# Static methods can return values or perform actions without returning anything. They are typically used to implement utility functions that are related to the class and do not require access to instance or class variables.
+# Static methods can also raise exceptions if there are any errors during the execution of the method. This allows you to handle errors gracefully and provide meaningful error messages to the user.
+# Static methods can also be used to implement utility functions that are related to the class but do not require access to instance or class variables. This allows you to define functions that are related to the class but do not depend on the instance or class itself.
+# Static methods can also be used to implement functions that are related to the class but do not require access to instance or class variables. This allows you to define functions that are related to the class but do not depend on the instance or class itself.
 
 class Bank:
     bank_name = "Bank of Maharashtra"
@@ -404,8 +557,7 @@ class Bank:
         self.email = email
         self.mobile_number = mobile_number
         self.address = address
-
-    # Object Method
+    
     def display_details(self):
         print("\nCustomer Details:\n")
         print("Customer Name:", self.customer_name)
@@ -415,11 +567,94 @@ class Bank:
         print("Email:", self.email)
         print("Mobile Number:", self.mobile_number)
         print("Address:", self.address)
+    
+    @classmethod
+    def display_class_details(cls):
+        print("\nBank Details:\n")
+        print("Bank Name:", cls.bank_name)
+        print("Location:", cls.location)
+        print("Interest Rate:", cls.interest_rate)
+        print("Phone Number:", cls.phone_number)
+
+    @classmethod
+    def update_interest_rate(cls, new_rate):
+        cls.interest_rate = new_rate
+        print(f"\nInterest rate updated to: {cls.interest_rate}")
+    
+    # @classmethod
+    # def update_location(cls, new_location):
+    #     cls.location = new_location
+    #     print(f"Location updated to: {cls.location}")    
+        
+    # def update_address(self, new_address):
+    #     self.address = new_address
+    #     print(f"Address updated to: {self.address}")
+    
+    @classmethod
+    def update_location(cls):
+        cls.location = cls.get_loc_or_add() 
+        print(f"\nLocation updated to: {cls.location}")
+    
+    def update_address(self):
+        self.address = self.get_loc_or_add()
+        print(f"\nAddress updated to: {self.address}")
+        
+    def deposit(self):
+        amount = self.get_amount()
+        self.balance += amount
+        print(f"\nDeposited {amount}. New balance: {self.balance}")
+        
+    def withdraw(self):
+        amount = self.get_amount()
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"\nWithdrawn {amount}. New balance: {self.balance}")
+        else:
+            print("\nInsufficient balance.")
+        
+    @staticmethod
+    def get_amount():
+        return float(input("\nEnter the amount: "))
+    
+    # Static Method
+    @staticmethod
+    def calculate_interest(balance, rate, time):
+        interest = (balance * rate * time) / 100
+        return interest
+    
+    @staticmethod
+    def get_loc_or_add():
+        return input("\nEnter the location/address: ")
+
 
 customer1 = Bank("Aashish Kumar", 1001, 5000.0, "Savings", "aashish.kumar@example.com", 9876543210, "123 Main St, Pune")
 customer2 = Bank("Virat Patil", 1002, 10000.0, "Current", "virat.patil@example.com", 9876543211, "456 Second St, Pune")
 
-Bank.display_details(customer1) # Calling the class method to display customer details using the class name
-customer1.display_details()  # Calling the object method to display customer details using the object name
-
 customer2.display_details()
+customer1.display_details()
+
+Bank.display_class_details()
+
+customer1.update_interest_rate(6.0)
+Bank.display_class_details()
+
+# Bank.update_location("Mumbai")
+# Bank.display_class_details()
+
+# customer2.update_address("789 New Address, Pune")
+# customer2.display_details()
+
+print("Calculating Interest:" , Bank.calculate_interest(10000, 5.5, 2))  # Static method call using class name
+print("Calculating Interest:" , customer1.calculate_interest(20000, 6.0, 3))  # Static method call using object name
+
+Bank.update_location()
+Bank.display_class_details()
+
+customer1.update_address()
+customer1.display_details()
+
+customer1.deposit()
+customer1.display_details()
+
+customer1.withdraw()
+customer1.display_details()
